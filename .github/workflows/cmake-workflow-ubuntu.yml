@@ -3,9 +3,7 @@ name: "CMake CI workflow ubuntu"
 
 on:
   push:
-    branches: [ test ]
-  # pull_request:
-  #   branches: [ githubactions_powershell ]
+    branches: [ main ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
@@ -13,9 +11,6 @@ env:
 
 jobs:
 
-    # The CMake configure and build commands are platform agnostic and should work equally
-    # well on Windows or Mac.  You can convert this to a matrix build if you need
-    # cross-platform coverage.
   ubuntu-job:
     name: "ubuntu-latest - ubuntu-18.04"
     runs-on: ubuntu-latest
